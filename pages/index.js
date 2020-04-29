@@ -1,6 +1,91 @@
 import Head from 'next/head'
 
 export default function Home() {
+  
+  const occupations_jp = [
+    '公務員[一般行政職]',
+    '歌手',
+    '薬剤師',
+    '宇宙開発技術者',
+    '金融業界で働く',
+    '作業療法士',
+    '自然観察指導員',
+    '作家',
+    '看護師',
+    '助産師',
+    '留学コーディネーター',
+    'ブライダルコーディネーター',
+    '画家',
+    '建築家',
+    '医師',
+    'グランドホステス(グランドスタッフ)',
+    '外交官',
+    'メイクアップアーティスト',
+    '歴培養士(エンブリオロジスト)',
+    'スタイリスト',
+    'プラネタリウムで働く',
+    'テレビ業界で働く',
+    'ツアーコンダクター',
+    'パン職人',
+    'イラストレーター',
+    'ファッションデザイナー',
+    'プロスポーツ選手',
+    'ゲームクリエイター',
+    '臨床心理士',
+    'スポーツトレーナー',
+    '中学校教師',
+    '公認会計士',
+    'フラワーデザイナー',
+    'CGクリエーター',
+    '通訳',
+    '編集者',
+    'パティシエ',
+    '保育士',
+    '美容師',
+    '客室乗務員',
+    '犬の訓練士',
+    'ネイルアーティスト',
+    '速記者',
+    'エンジニア',
+    '獣医師',
+    '農業',
+    '言語聴覚士',
+    '映画監督',
+    '理学療法士',
+    'ミキサー',
+    '漫画家',
+    '栄養士',
+    'ゲームグラフィックデザイナー',
+    '水族館の飼育係',
+    '警察官',
+    'PA[音響]',
+    'ホテルで働く',
+    '幼稚園教諭',
+    '声優',
+    '動物園の飼育係',
+    'トリマー',
+    '登山家',
+    '天文台で働く',
+    'NASAで働く',
+    'カイロプラクター',
+    '電車運転士'
+  ];
+  
+  const randomly = () => {
+    return 0.5 - Math.random();
+  }
+  
+  const randomExtract = (array) => {
+    var jsonObj = [];
+    for (var l=1;l<array.length;l++) { 
+      jsonObj.push({label: l, values: array[l]}); 
+    }
+    array.sort(randomly);
+    console.log(array)
+    return array;
+  }
+
+  
   return (
     <div className="container">
       <Head>
@@ -9,43 +94,31 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <h1 className="title">EG Item Generator</h1>
+        <div className="flex">
+        <div className="grid">
+          <div href="https://nextjs.org/docs" className="card">
+            <h2>Player. 1</h2>
+            <h3>{randomExtract(occupations_jp)[1]}</h3>
+            <iframe src="https://tango-gacha.com/"
+              width="100%" height="500" frameborder="0"
+              allowfullscreen sandbox>
+              </iframe>
+          </div>
+        </div>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div href="https://nextjs.org/docs" className="card">
+            <h2>Player. 2</h2>
+            <h3>{randomExtract(occupations_jp)[1]}</h3>
+            <iframe src="https://tango-gacha.com/"
+              width="100%" height="500" frameborder="0"
+              allowfullscreen sandbox>
+            </iframe>
+          </div>
         </div>
+        </div>
+        
       </main>
 
       <footer>
@@ -71,11 +144,14 @@ export default function Home() {
 
         main {
           padding: 5rem 0;
-          flex: 1;
           display: flex;
+          width: 100%;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+        .flex {
+          display: flex;
         }
 
         footer {
@@ -143,14 +219,12 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
-          max-width: 800px;
+          width: 50%;
           margin-top: 3rem;
         }
 
         .card {
-          margin: 1rem;
-          flex-basis: 45%;
+          margin: 30px 15px 0 0;
           padding: 1.5rem;
           text-align: left;
           color: inherit;
@@ -158,8 +232,18 @@ export default function Home() {
           border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
         }
 
+        .img {
+          display: none;
+        }
+
+        #header {
+          display: none;
+        }
         .card:hover,
         .card:focus,
         .card:active {

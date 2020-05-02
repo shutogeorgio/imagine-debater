@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Overview from '../components/Overview'
+import OverviewJP from '../../components/Overview.jp'
 
 export default function Home() {
 
@@ -13,12 +13,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">Overview</h1>
+        <h1 className="title">概要</h1>
         <div className="flex flex-column">
-          <h2 className="mr-5 text-warning">Rules</h2>
-          <Overview />
+          <h2 className="mr-5 text-warning">ルール</h2>
+          <OverviewJP />
         </div>
-        <a href="/" className="btn btn-danger mt-5">Home</a>
+        <a href="/" className="btn btn-danger mt-5">ホーム</a>
       </main>
 
       <footer>

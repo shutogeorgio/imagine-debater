@@ -1,3 +1,11 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -107,6 +115,9 @@ code {
   display: none;
   flex-direction: column;
 }
+.sizser {
+  display: inline-block;
+}
 .card h3 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
@@ -118,9 +129,6 @@ code {
 }
 .logo {
   height: 1em;
-}
-.summary_btn {
-  line-height: 1;
 }
 @media (max-width: 600px) {
   .grid {

@@ -1,19 +1,37 @@
-import React, { Component } from 'react'
+import React from 'react'
+import fetch from 'isomorphic-unfetch'
 
-import data from './data/overview/jp.json'
+const url = `http://newsapi.org/v2/everything?q=bitcoin&from=2020-04-02&sortBy=publishedAt&apiKey=${process.env.API_KEY}`;
 
-const newdata = data.map((data) => { 
-  return(
-    <li className="mt-3" key={data.id} >
-      <h4> {data.desc}</h4>  
-    </li>
-  )
-})
+class Item extends React.Component {
 
-export default class Items extends Component {
+  constructor(props) {
+    super(props);
+ 
+    this.state = {
+      news: [],
+    };
+  }
+
+  componentDidMount() {
+    fetch(url)
+      .then(response => response.json())
+      .then(data => this.setState({ news: data.articles }))
+  }
+
   render() {
+    const { news } = this.state;
+ 
     return (
-      <ul className="m-3 p-3 owncard">{newdata}</ul>
-    )
+      <ul>
+        {news.map(info =>
+          <li key={info.id}>
+            <a href={info.url}>{info.author}</a>
+          </li>
+        )}
+      </ul>
+    );
   }
 }
+
+export default Item

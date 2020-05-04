@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import randomExtract from '../public/lib/js/randomGetter'
-import data from './data/jobs/en.json'
+import data from './data/jobs/jp.json'
 
 export default class Job extends Component {
 
@@ -12,9 +12,8 @@ export default class Job extends Component {
   }
 
   componentDidMount() {
-    let extractedJob = randomExtract(data.initial)[0] + randomExtract(data.middle)[0] + randomExtract(data.last)[0];
     this.setState({
-      jobTitle: extractedJob
+      jobTitle: randomExtract(data.name)[0]
     });
   }
 

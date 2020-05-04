@@ -7,8 +7,8 @@ Emmit one role + three items for game
 > - 1 vs 1 battle
 > - Get one role and three items for each player
 > - player gets 10 sec to create strategy to defeat opponent
-> - In 1 min, appeal how your role is greater than opponent one
-> - do role vice versa as well and judge by other people
+> - In 1 min, appeal how your role is greater than opponent one by integrating items for enhancement
+> - Play a role vice versa as well and judge by other people
 
 You can also check from /overview routes
 
@@ -17,7 +17,8 @@ You can also check from /overview routes
 
 ## Language
 Currenty, Available English and Japanese Version
-
+> English Version Routes `/` 
+> Japanese Version Routes `/jp`
 ## Get Started
 First, run the development server:
 

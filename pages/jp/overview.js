@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Navbar from '../../components/jp/Navbar'
+import Navbar from '../../components/Navbar'
 import OverviewJP from '../../components/jp/Overview'
 import Footer from '../../components/Footer'
 
@@ -17,7 +17,6 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <a href="/overview" className="btn btn-danger d-flex ml-auto">EN</a>
         <h1 className="title">概要</h1>
         <div className="flex flex-column">
           <h2 className="mr-5 text-info">ルール</h2>

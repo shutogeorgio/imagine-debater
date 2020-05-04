@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
 import RevealButton from '../components/RevealButton'
 import Job from '../components/Job'
 import Footer from '../components/Footer'
@@ -14,16 +15,10 @@ export default function Home() {
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
-      <nav class="navbar navbar-light bg-white w-100 nav-bar-detail">
-         <a class="navbar-brand" href="#">
-          <img src="/imagine-logo.png" width="30" height="30" class="d-inline-block align-top mr-3" alt="" />
-          Imagine Debater
-        </a>
-      </nav>
+      <Navbar />
       
       <main>
-        <a href="/jp" className="btn btn-danger d-flex ml-auto">JP</a>
-        <h1 className="title"><img src="/imagine-logo.png" class="title-logo" />Imagine Debater</h1>
+        <h1 className="title"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
         <a href="/overview" className="btn btn-info mt-5">Overview</a>
         <div className="flex">
         <div className="grid mr-5">

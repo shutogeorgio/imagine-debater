@@ -17,7 +17,6 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <a href="/jp/overview" className="btn btn-danger d-flex ml-auto">JP</a>
         <h1 className="title">Overview</h1>
         <div className="flex flex-column">
           <h2 className="mr-5 text-info">Rules</h2>

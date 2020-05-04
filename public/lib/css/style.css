@@ -54,6 +54,7 @@ a {
 .title a:focus,
 .title a:active {
   text-decoration: underline;
+  color: inherit;
 }
 .title {
   margin: 0;
@@ -128,9 +129,9 @@ code {
   background: red;
 }
 
-a:hover {
+.btn:hover {
   text-decoration: none;
-  transform: translateY(5px);
+  transform: translateY(3px);
   box-shadow: 0 3px 15px rgba(0,0,0,.15);
 }
 
@@ -142,6 +143,13 @@ a:hover {
   border: 1px solid #dddddd;
 }
 
+.nab-var-size {
+  font-size: .875rem;
+}
+
+a:hover {
+  color: inherit;
+}
 main {
   background: url('/nbd-imagine.png');
   background-size: cover;

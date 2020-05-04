@@ -28,9 +28,12 @@ class Item extends React.Component {
     });
 
     return (
-      <ul className="mt-3">
+      <div className="mt-3">
+        <h5>Items List</h5>
+        <ul className="mt-1">
         {threeWords}
-      </ul>
+        </ul>
+      </div>
     );
   }
 }

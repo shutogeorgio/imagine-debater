@@ -20,8 +20,8 @@ export default class Job extends Component {
 
   render() {
     return(
-      <div>
-        {this.state.jobTitle}
+      <div className="d-flex align-items-center mt-3">
+        <h5>Role:<br /> {this.state.jobTitle}</h5>
       </div>
     )
   }

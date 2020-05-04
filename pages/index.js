@@ -9,30 +9,33 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Imagine Debater</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
       <main>
         <a href="/jp" className="btn btn-danger d-flex ml-auto">JP</a>
-        <h1 className="title">Imagine Debater</h1>
-        <a href="/overview" className="btn btn-primary mt-5">Overview</a>
+        <h1 className="title"><img src="/imagine-logo.png" class="title-logo" />Imagine Debater</h1>
+        <a href="/overview" className="btn btn-info mt-5">Overview</a>
         <div className="flex">
-        <div className="grid">
-          <div href="https://nextjs.org/docs" className="card">
+        <div className="grid mr-5">
+          <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
             <div className="sizser">
-                <h2 className="mr-5 text-warning">Player. 1</h2>
-                <Job />
+                <div className="d-inline-block">
+                  <h2 className="mr-5 text-info">Player. 1</h2>
+                  <Job />
+                  <RevealButton />
+                </div>
               </div>
-              <RevealButton />
+              
           </div>
         </div>
 
         <div className="grid">
-          <div href="https://nextjs.org/docs" className="card">
+          <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
             <div className="sizser">
-              <h2 className="mr-5 text-success">Player. 2</h2>
+              <h2 className="mr-5 text-info">Player. 2</h2>
               <Job />
             </div>
             <RevealButton />
@@ -53,7 +56,6 @@ export default function Home() {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
-
         * {
           box-sizing: border-box;
         }

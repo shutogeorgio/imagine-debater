@@ -16,26 +16,26 @@ export default function Home() {
 
       <main>
         <a href="/" className="btn btn-danger d-flex ml-auto">EN</a>
-        <h1 className="title mr-4">Imagine Debater</h1>
-        <a href="/jp/overview" className="btn btn-primary">ルール説明</a>
+        <h1 className="title"><img src="/imagine-logo.png" class="title-logo" />Imagine Debater</h1>
+        <a href="/jp/overview" className="btn btn-info mt-5">ルール説明</a>
         <div className="flex">
-        <div className="grid">
-          <div href="https://nextjs.org/docs" className="card">
+        <div className="grid mr-5">
+          <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
             <div className="sizser">
-              <h2 className="mr-5 text-warning">プレイヤー. 1</h2>
+              <h2 className="mr-1 text-info">プレイヤー. 1</h2>
             </div>
-              <h3 className="mt-5"><Job /></h3>
-              <RevealButton styelying="btn btn-primary" />
+              <h3 className="mt-1"><Job /></h3>
+              <RevealButton />
           </div>
         </div>
 
         <div className="grid">
-          <div href="https://nextjs.org/docs" className="card">
+          <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
             <div className="sizser">
-              <h2 className="mr-5 text-success">プレイヤー. 2</h2>
+              <h2 className="mr-5 text-info">プレイヤー. 2</h2>
             </div>
-            <h3 className="mt-5"><Job /></h3>
-            <RevealButton styelying="btn btn-primary" />
+            <h3 className="mt-1"><Job /></h3>
+            <RevealButton />
           </div>
         </div>
         </div>

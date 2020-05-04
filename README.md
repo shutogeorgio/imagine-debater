@@ -7,7 +7,7 @@ Emmit one role + three items for game
 > - 1 vs 1 battle
 > - Get one role and three items for each player
 > - player gets 10 sec to create strategy to defeat opponent
-> - In 1 min, can appeal who the role is greater than opponent one
+> - In 1 min, appeal how your role is greater than opponent one
 > - do role vice versa as well and judge by other people
 
 You can also check from /overview routes

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Job from '../../components/Job.jp'
+import Footer from '../../components/Footer'
 import randomExtract from '../../public/lib/js/randomGetter'
 import closeOpenFuncFirst from '../../public/lib/js/first'
 import closeOpenFuncSecond from '../../public/lib/js/secondary'
@@ -16,8 +17,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">🔥EG Debater🔥</h1>
-        <a href="/jp/overview" className="btn btn-primary mt-5">ルール説明</a>
+        <h1 className="title mr-4">🔥EG Debater🔥</h1>
+        <a href="/jp/overview" className="btn btn-primary">ルール説明</a>
+        
         <div className="flex">
         <div className="grid">
           <div href="https://nextjs.org/docs" className="card">
@@ -56,16 +58,7 @@ export default function Home() {
         
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <Footer />
 
       <style jsx global>{`
         html,

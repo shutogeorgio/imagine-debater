@@ -9,12 +9,12 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Overview</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
-      <Navbar />
+    <Navbar />
 
       <main>
         <h1 className="title">概要</h1>

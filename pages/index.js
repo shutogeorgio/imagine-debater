@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import RevealButton from '../components/RevealButton'
+import Reload from '../components/Reload'
 import Job from '../components/Job'
 import Footer from '../components/Footer'
 
@@ -19,7 +20,7 @@ export default function Home() {
       
       <main>
         <h1 className="title"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
-        <a href="/overview" className="btn btn-info mt-5">Overview</a>
+        <Reload />
         <div className="flex">
         <div className="grid mr-5">
           <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">

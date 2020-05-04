@@ -6,10 +6,10 @@ export default class RevealButton extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      display: false
+      display: false,
+      location: ''
     }
     this.transDisplay = this.transDisplay.bind(this);
-    this.getLocation = this.getLocation.bind(this);
   }
 
   transDisplay() {
@@ -18,7 +18,7 @@ export default class RevealButton extends Component {
     });
   }
 
-  getLocation() {
+  componentDidMount() {
     let currentLocation = window.location.pathname;
     this.setState({
       location: currentLocation
@@ -26,20 +26,20 @@ export default class RevealButton extends Component {
   }
 
   render() {
-    if (this.state.display || this.state.location == "/") {
+    if (this.state.display && this.state.location == "/") {
       return (
          <div className="mt-3">
            <button className="btn btn-info btn-sm" onClick={this.transDisplay}>&times; Close</button>
            <Item />
          </div>
       );
-    } else if(!this.state.display || this.state.location == "/") {
+    } else if(!this.state.display && this.state.location == "/") {
       return (
         <div className="mt-3">
           <button className="btn btn-info btn-sm" onClick={this.transDisplay}>Open</button>
          </div>
       );
-    } else if (this.state.display || this.state.location == "jp") {
+    } else if (this.state.display && this.state.location == "jp") {
       return (
         <div>
          <button className="btn btn-info btn-sm" onClick={this.transDisplay}>&times; Close</button>

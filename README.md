@@ -13,7 +13,7 @@ Emmit one role + three items for game
 You can also check from /overview routes
 
 ## Preview
-[![Image from Gyazo](https://i.gyazo.com/e72b07e83f47ad7aeed88b7dd495b8c8.png)](https://gyazo.com/e72b07e83f47ad7aeed88b7dd495b8c8)
+[![Image from Gyazo](https://i.gyazo.com/0dfa6701febb358105746dcfb9f73bac.png)](https://gyazo.com/0dfa6701febb358105746dcfb9f73bac)
 
 ## Language
 Currenty, Available English and Japanese Version

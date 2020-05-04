@@ -1,13 +1,14 @@
 ## Overview
+👾 Imagine Debater
 Debate Game Platforms
 Emmit one role + three items for game
 
 ## Rules
-> 1 vs 1 battle
-> Get one role and three items for each player
-> player gets 10 sec to create strategy to defeat opponent
-> In 1 min, can appeal who the role is greater than opponent one
-> do role vice versa as well and judge by other people
+> - 1 vs 1 battle
+> - Get one role and three items for each player
+> - player gets 10 sec to create strategy to defeat opponent
+> - In 1 min, can appeal who the role is greater than opponent one
+> - do role vice versa as well and judge by other people
 
 You can also check from /overview routes
 
@@ -29,4 +30,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## Structure
-This module is based on Next.js based on JSX
+This module made with Next.js based on JSX

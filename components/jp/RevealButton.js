@@ -19,7 +19,7 @@ export default class RevealButton extends Component {
     if (this.state.display) {
       return (
          <div>
-           <button className="btn btn-secondary btn-sm" onClick={this.transDisplay}>Close</button>
+           <button className="btn btn-info btn-sm" onClick={this.transDisplay}>Close</button>
            <iframe src="https://tango-gacha.com/#word"
               width="100%" height="500" frameBorder="0">
             </iframe>
@@ -28,7 +28,7 @@ export default class RevealButton extends Component {
     } else {
       return (
         <div>
-           <button className="btn btn-secondary btn-sm" onClick={this.transDisplay}>Open</button>
+           <button className="btn btn-info btn-sm" onClick={this.transDisplay}>Open</button>
          </div>
       );
     }

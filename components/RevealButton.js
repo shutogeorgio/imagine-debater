@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Items from '../components/Item'
+import Item from '../components/Item'
 
 export default class RevealButton extends Component {
 
@@ -18,15 +18,15 @@ export default class RevealButton extends Component {
   render() {
     if (this.state.display) {
       return (
-         <div>
-           <button className="btn btn-secondary" onClick={this.transDisplay}>Close</button>
-           <Items />
+         <div className="mt-3">
+           <button className="btn btn-info btn-sm" onClick={this.transDisplay}>Close</button>
+           <Item />
          </div>
       );
     } else {
       return (
-        <div>
-          <button className="btn btn-secondary" onClick={this.transDisplay}>Open</button>
+        <div className="mt-3">
+          <button className="btn btn-info btn-sm" onClick={this.transDisplay}>Open</button>
          </div>
       );
     }

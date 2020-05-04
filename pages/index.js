@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Items from '../components/Item'
+import Job from '../components/Job'
 
 export default function Home() {
 
@@ -19,7 +20,8 @@ export default function Home() {
         <div className="grid">
           <div href="https://nextjs.org/docs" className="card">
             <div className="sizser">
-              <h2 className="mr-5 text-warning">Player. 1</h2>
+                <h2 className="mr-5 text-warning">Player. 1</h2>
+                <Job />
               <button className="btn btn-warning btn-sm text-white summary_btn first">Open</button>
             </div>
             <h3 className="mt-5"></h3>  
@@ -32,7 +34,8 @@ export default function Home() {
         <div className="grid">
           <div href="https://nextjs.org/docs" className="card">
             <div className="sizser">
-              <h2 className="mr-5 text-success">Player. 2</h2>  
+                <h2 className="mr-5 text-success">Player. 2</h2>
+                <Job />
               <button className="btn btn-success btn-sm text-white summary_btn second">Open</button>
             </div>
             <h3 className="mt-5"></h3>

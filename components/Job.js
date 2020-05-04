@@ -1,34 +1,28 @@
 import React, { Component } from 'react'
-import data from './data/overview/en.json'
+import randomExtract from '../public/lib/js/randomGetter'
+import data from './data/jobs/en.json'
 
 export default class Job extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      firstTitle: [],
-      middleTitle: [],
-      lastTitle: [],
+      jobTitle: ''
     }
-    this.randomExtract = this.randomExtract.bind(this);
-  }
-
-  randomExtract() {
-    return Math.floor(Math.random() * - 0.5);
   }
 
   componentDidMount() {
+    const extractedJob = randomExtract(data.initial)[0] +"\t"+ randomExtract(data.middle)[0] +"\t"+ randomExtract(data.last)[0];
     this.setState({
-      firstTitle: data.initial,
-      middleTitle: data.middle,
-      lastTitle: data.last
+      jobTitle: extractedJob
     });
-    console.log(this.state.firstTitle);
   }
 
   render() {
     return(
-      <div />
+      <div>
+        {this.state.jobTitle}
+      </div>
     )
   }
 }

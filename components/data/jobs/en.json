@@ -1,5 +1,5 @@
-[
-  {
+{
+    "id": 1,
     "initial":
       [ 
         "Lead", 
@@ -96,5 +96,4 @@
       "Representative", 
       "Strategist"
     ]
-  }
-]
+}

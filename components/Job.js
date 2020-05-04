@@ -12,7 +12,7 @@ export default class Job extends Component {
   }
 
   componentDidMount() {
-    let extractedJob = randomExtract(data.initial)[0] + randomExtract(data.middle)[0] + randomExtract(data.last)[0];
+    let extractedJob = randomExtract(data.initial)[0] +"\t"+ randomExtract(data.middle)[0] +"\t"+ randomExtract(data.last)[0];
     this.setState({
       jobTitle: extractedJob
     });

@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Items from '../components/Item'
+import RevealButton from '../components/RevealButton'
 import Job from '../components/Job'
+import Footer from '../components/Footer'
 
 export default function Home() {
-
+  const color = "btn btn-secondary";
   return (
     <div className="container">
       <Head>
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <a href="/jp" className="btn btn-danger d-flex ml-auto">JP</a>
         <h1 className="title">🔥EG Debater🔥</h1>
         <a href="/overview" className="btn btn-primary mt-5">Overview</a>
         <div className="flex">
@@ -22,44 +24,25 @@ export default function Home() {
             <div className="sizser">
                 <h2 className="mr-5 text-warning">Player. 1</h2>
                 <Job />
-              <button className="btn btn-warning btn-sm text-white summary_btn first">Open</button>
-            </div>
-            <h3 className="mt-5"></h3>  
-            <div className="summary-box first">
-              <Items />
-            </div>
+              </div>
+              <RevealButton />
           </div>
         </div>
 
         <div className="grid">
           <div href="https://nextjs.org/docs" className="card">
             <div className="sizser">
-                <h2 className="mr-5 text-success">Player. 2</h2>
-                <Job />
-              <button className="btn btn-success btn-sm text-white summary_btn second">Open</button>
+              <h2 className="mr-5 text-success">Player. 2</h2>
+              <Job />
             </div>
-            <h3 className="mt-5"></h3>
-            <div
-              className="summary-box second"
-            >
-              <Items />
-            </div>
+            <RevealButton />
           </div>
         </div>
         </div>
         
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <Footer />
 
       <style jsx global>{`
         html,

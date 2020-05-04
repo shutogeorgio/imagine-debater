@@ -28,7 +28,7 @@ class Item extends React.Component {
     });
 
     return (
-      <ul>
+      <ul className="mt-3">
         {threeWords}
       </ul>
     );

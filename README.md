@@ -1,20 +1,32 @@
 ## Overview
+Debate Game Platforms
 Emmit one role + three items for game
 
 ## Rules
-You can check from /overview routes
+> 1 vs 1 battle
+> Get one role and three items for each player
+> player gets 10 sec to create strategy to defeat opponent
+> In 1 min, can appeal who the role is greater than opponent one
+> do role vice versa as well and judge by other people
 
-## Getting Started
+You can also check from /overview routes
+
+## Preview
+[![Image from Gyazo](https://i.gyazo.com/e72b07e83f47ad7aeed88b7dd495b8c8.png)](https://gyazo.com/e72b07e83f47ad7aeed88b7dd495b8c8)
+
+## Language
+Currenty, Available English and Japanese Version
+
+## Get Started
 First, run the development server:
 
 ```bash
 npm run dev
-# or
+or
 yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
 
 ## Structure
-This module is based   a  great [Next.js](https://nextjs.org/) project.
+This module is based on Next.js based on JSX

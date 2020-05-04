@@ -13,12 +13,13 @@ export default function Home() {
       </Head>
 
       <main>
+        <a href="/jp/overview" className="btn btn-danger d-flex ml-auto">JP</a>
         <h1 className="title">Overview</h1>
         <div className="flex flex-column">
           <h2 className="mr-5 text-warning">Rules</h2>
           <Overview />
         </div>
-        <a href="/" className="btn btn-danger mt-5">Home</a>
+        <a href="/" className="btn btn-secondary mt-5">Home</a>
       </main>
 
       <footer>

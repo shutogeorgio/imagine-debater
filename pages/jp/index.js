@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Job from '../../components/Job.jp'
-import randomExtract from '../../public/lib/js/randomGetter'
-import closeOpenFuncFirst from '../../public/lib/js/first'
-import closeOpenFuncSecond from '../../public/lib/js/secondary'
+import Job from '../../components/jp/Job'
+import Footer from '../../components/Footer'
+import RevealButton from '../../components/jp/RevealButton'
 
 export default function Home() {
   
@@ -16,56 +15,34 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">🔥EG Debater🔥</h1>
-        <a href="/jp/overview" className="btn btn-primary mt-5">ルール説明</a>
+        <a href="/" className="btn btn-danger d-flex ml-auto">EN</a>
+        <h1 className="title mr-4">🔥EG Debater🔥</h1>
+        <a href="/jp/overview" className="btn btn-primary">ルール説明</a>
         <div className="flex">
         <div className="grid">
           <div href="https://nextjs.org/docs" className="card">
             <div className="sizser">
               <h2 className="mr-5 text-warning">プレイヤー. 1</h2>
-              <button className="btn btn-warning btn-sm text-white summary_btn first"
-            onClick={closeOpenFuncFirst}>Open</button>
             </div>
-            <h3 className="mt-5"><Job /></h3>  
-            <div className="summary-box first">
-              <iframe src="https://tango-gacha.com/#word"
-              width="100%" height="500" frameBorder="0">
-              </iframe>
-            </div>
+              <h3 className="mt-5"><Job /></h3>
+              <RevealButton styelying="btn btn-primary" />
           </div>
         </div>
 
         <div className="grid">
           <div href="https://nextjs.org/docs" className="card">
             <div className="sizser">
-              <h2 className="mr-5 text-success">プレイヤー. 2</h2>  
-              <button className="btn btn-success btn-sm text-white summary_btn second"
-            onClick={closeOpenFuncSecond}>Open</button>
+              <h2 className="mr-5 text-success">プレイヤー. 2</h2>
             </div>
             <h3 className="mt-5"><Job /></h3>
-            <div
-              className="summary-box second"
-            >
-              <iframe src="https://tango-gacha.com/#word"
-              width="100%" height="500" frameBorder="0">
-              </iframe>
-            </div>
+            <RevealButton styelying="btn btn-primary" />
           </div>
         </div>
         </div>
         
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <Footer />
 
       <style jsx global>{`
         html,

@@ -112,7 +112,6 @@ code {
   border-color: #0070f3;
 }
 .summary-box {
-  display: none;
   flex-direction: column;
 }
 .sizser {

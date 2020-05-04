@@ -9,26 +9,29 @@ class Item extends React.Component {
     super(props);
  
     this.state = {
-      news: [],
+      words: [],
     };
   }
 
   componentDidMount() {
-    fetch(url)
+    let limit = 3;
+    fetch(`https://random-word-api.herokuapp.com/word?number=${limit}`)
       .then(response => response.json())
-      .then(data => this.setState({ news: data.articles }))
+      .then(data => this.setState({
+        words: data
+      }))
   }
 
   render() {
-    const { news } = this.state;
- 
+    const threeWords = this.state.words.map(singleWord => {
+      return (
+        <li>{singleWord}</li>
+      )
+    });
+
     return (
       <ul>
-        {news.map(info =>
-          <li key={info.id}>
-            <a href={info.url}>{info.author}</a>
-          </li>
-        )}
+        {threeWords}
       </ul>
     );
   }

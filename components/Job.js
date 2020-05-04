@@ -18,7 +18,12 @@ export default class Job extends Component {
   }
 
   componentDidMount() {
-    
+    this.setState({
+      firstTitle: data.initial,
+      middleTitle: data.middle,
+      lastTitle: data.last
+    });
+    console.log(this.state.firstTitle);
   }
 
   render() {

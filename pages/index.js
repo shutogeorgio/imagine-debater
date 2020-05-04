@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Items from '../components/Item'
-import closeOpenFuncFirst from '../public/lib/js/first'
-import closeOpenFuncSecond from '../public/lib/js/secondary'
 
 export default function Home() {
 
@@ -22,8 +20,7 @@ export default function Home() {
           <div href="https://nextjs.org/docs" className="card">
             <div className="sizser">
               <h2 className="mr-5 text-warning">Player. 1</h2>
-              <button className="btn btn-warning btn-sm text-white summary_btn first"
-            onClick={closeOpenFuncFirst}>Open</button>
+              <button className="btn btn-warning btn-sm text-white summary_btn first">Open</button>
             </div>
             <h3 className="mt-5"></h3>  
             <div className="summary-box first">
@@ -36,8 +33,7 @@ export default function Home() {
           <div href="https://nextjs.org/docs" className="card">
             <div className="sizser">
               <h2 className="mr-5 text-success">Player. 2</h2>  
-              <button className="btn btn-success btn-sm text-white summary_btn second"
-            onClick={closeOpenFuncSecond}>Open</button>
+              <button className="btn btn-success btn-sm text-white summary_btn second">Open</button>
             </div>
             <h3 className="mt-5"></h3>
             <div

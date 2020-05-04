@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import data from './data/overview/jp.json'
+import data from '../data/overview/jp.json'
 
 const newdata = data.map((data) => { 
   return(

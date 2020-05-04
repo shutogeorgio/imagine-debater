@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import randomExtract from '../public/lib/js/randomGetter'
-import data from './data/jobs/jp.json'
+import randomExtract from '../../public/lib/js/randomGetter'
+import data from '../data/jobs/jp.json'
 
 export default class Job extends Component {
 

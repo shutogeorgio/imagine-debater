@@ -17,9 +17,9 @@ export default function Home() {
       </Head>
 
       <main>
+        <a href="/" className="btn btn-danger d-flex ml-auto">EN</a>
         <h1 className="title mr-4">🔥EG Debater🔥</h1>
         <a href="/jp/overview" className="btn btn-primary">ルール説明</a>
-        
         <div className="flex">
         <div className="grid">
           <div href="https://nextjs.org/docs" className="card">

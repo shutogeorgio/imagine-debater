@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <a href="/jp" className="btn btn-danger d-flex ml-auto">JP</a>
         <h1 className="title">🔥EG Debater🔥</h1>
         <a href="/overview" className="btn btn-primary mt-5">Overview</a>
         <div className="flex">

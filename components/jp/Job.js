@@ -19,8 +19,9 @@ export default class Job extends Component {
 
   render() {
     return(
-      <div>
-        {this.state.jobTitle}
+      <div className="d-flex flex-column  mt-3">
+        <div><strong>役職:</strong></div>
+        <h5 className="mt-1">{this.state.jobTitle}</h5>
       </div>
     )
   }

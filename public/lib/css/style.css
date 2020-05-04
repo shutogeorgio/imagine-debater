@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-  min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
+  width: 95%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,7 @@ a {
 .title a:focus,
 .title a:active {
   text-decoration: underline;
+  color: inherit;
 }
 .title {
   margin: 0;
@@ -87,7 +88,6 @@ code {
   min-height: 400px;
 }
 .card {
-  margin: 30px 30px 0 0;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -104,12 +104,6 @@ code {
 }
 #header {
   display: none;
-}
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
 }
 .summary-box {
   flex-direction: column;
@@ -134,9 +128,33 @@ code {
   display: flex;
   background: red;
 }
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(3px);
+  box-shadow: 0 3px 15px rgba(0,0,0,.15);
+}
+
+.title-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
+.nab-var-size {
+  font-size: .875rem;
+}
+
+a:hover {
+  color: inherit;
+}
+main {
+  background: url('/nbd-imagine.png');
+  background-size: cover;
+}
+.nav-bar-detail {
+  border-top: 4px solid #17a2b8;
+  box-shadow: 0 1px 0 rgba(12,13,14,0.15);
 }

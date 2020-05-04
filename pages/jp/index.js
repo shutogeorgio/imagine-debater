@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>EG Debater</title>
+        <title>Imagine Debater</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
@@ -16,7 +16,7 @@ export default function Home() {
 
       <main>
         <a href="/" className="btn btn-danger d-flex ml-auto">EN</a>
-        <h1 className="title mr-4">🔥EG Debater🔥</h1>
+        <h1 className="title mr-4">Imagine Debater</h1>
         <a href="/jp/overview" className="btn btn-primary">ルール説明</a>
         <div className="flex">
         <div className="grid">

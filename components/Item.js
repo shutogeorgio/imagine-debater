@@ -29,6 +29,7 @@ class Item extends React.Component {
 
     return (
       <div className="mt-3">
+        <hr />
         <h5>Items List</h5>
         <ul className="mt-1">
         {threeWords}

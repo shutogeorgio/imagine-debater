@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import Job from '../../components/jp/Job'
 import Reload from '../../components/Reload'
 import Footer from '../../components/Footer'
-import RevealButton from '../../components/jp/RevealButton'
+import RevealButton from '../../components/RevealButton'
 
 export default function Home() {
   

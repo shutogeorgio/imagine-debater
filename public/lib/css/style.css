@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-  min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
+  width: 95%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -143,13 +143,10 @@ a:hover {
 }
 
 main {
-  background: url('/imagine-logo.png');
+  background: url('/nbd-imagine.png');
   background-size: cover;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.nav-bar-detail {
+  border-top: 4px solid #17a2b8;
+  box-shadow: 0 1px 0 rgba(12,13,14,0.15);
 }

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../../components/jp/Navbar'
 import Job from '../../components/jp/Job'
 import Footer from '../../components/Footer'
 import RevealButton from '../../components/jp/RevealButton'
@@ -14,6 +15,8 @@ export default function Home() {
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
+      <Navbar />
+      
       <main>
         <a href="/" className="btn btn-danger d-flex ml-auto">EN</a>
         <h1 className="title"><img src="/imagine-logo.png" class="title-logo" />Imagine Debater</h1>
@@ -22,7 +25,7 @@ export default function Home() {
         <div className="grid mr-5">
           <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
             <div className="sizser">
-              <h2 className="mr-1 text-info">プレイヤー. 1</h2>
+              <h3 className="mr-1 text-info">プレイヤー. 1</h3>
             </div>
               <h3 className="mt-1"><Job /></h3>
               <RevealButton />

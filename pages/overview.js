@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
 import Overview from '../components/Overview'
+import Footer from '../components/Footer'
 
 export default function Home() {
 
@@ -12,6 +14,8 @@ export default function Home() {
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
+      <Navbar />
+
       <main>
         <a href="/jp/overview" className="btn btn-danger d-flex ml-auto">JP</a>
         <h1 className="title">Overview</h1>
@@ -22,16 +26,7 @@ export default function Home() {
         <a href="/" className="btn btn-info mt-5">Home</a>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+      <Footer />
     </div>
   )
 }

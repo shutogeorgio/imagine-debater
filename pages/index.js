@@ -14,6 +14,13 @@ export default function Home() {
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
+      <nav class="navbar navbar-light bg-white w-100 nav-bar-detail">
+         <a class="navbar-brand" href="#">
+          <img src="/imagine-logo.png" width="30" height="30" class="d-inline-block align-top mr-3" alt="" />
+          Imagine Debater
+        </a>
+      </nav>
+      
       <main>
         <a href="/jp" className="btn btn-danger d-flex ml-auto">JP</a>
         <h1 className="title"><img src="/imagine-logo.png" class="title-logo" />Imagine Debater</h1>
@@ -23,7 +30,7 @@ export default function Home() {
           <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
             <div className="sizser">
                 <div className="d-inline-block">
-                  <h2 className="mr-5 text-info">Player. 1</h2>
+                  <h3 className="mr-5 text-info">Player. 1</h3>
                   <Job />
                   <RevealButton />
                 </div>
@@ -35,7 +42,7 @@ export default function Home() {
         <div className="grid">
           <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
             <div className="sizser">
-              <h2 className="mr-5 text-info">Player. 2</h2>
+              <h3 className="mr-5 text-info">Player. 2</h3>
               <Job />
             </div>
             <RevealButton />

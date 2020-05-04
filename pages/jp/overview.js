@@ -14,7 +14,7 @@ export default function Home() {
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
-      <Navbar />
+    <Navbar />
 
       <main>
         <h1 className="title">概要</h1>

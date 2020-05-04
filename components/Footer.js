@@ -12,6 +12,7 @@ export default class Footer extends React.Component {
             href="https://github.com/shutogeorgio"
             target="_blank"
             rel="noopener noreferrer"
+            className="copy-right-text"
         >
           <img src="/logo.png" style={logostyles} />©Copyright2020 UwasS .All Rights Reserved.
           </a>

@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 main {
-  padding: 5rem 3%;
+  padding: 2rem 3%;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -83,10 +83,32 @@ code {
   justify-content: center;
   flex-wrap: wrap;
   width: 50%;
-  margin-top: 3rem;
+  margin-top: 1rem;
   align-self: flex-start;
   min-height: 400px;
 }
+
+@media only screen and (max-width: 480px) {
+  .flex {
+    flex-direction: column;
+  }
+  .grid {
+    width: 100%;
+    min-height: unset;
+  }
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2rem;
+  }
+  .copy-right-text {
+    font-size: .7rem;
+  }
+  .nav-bar-home {
+    padding: 0px;
+  }
+}
+
 .card {
   padding: 1.5rem;
   text-align: left;

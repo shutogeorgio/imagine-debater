@@ -26,7 +26,7 @@ export default class Reload extends Component {
     return (
       <button className="btn btn-info mt-3"
       onClick={this.reloadFunc}
-      >&#8635; {this.state.location == "/" ? "Reload" : "リロード" }</button>
+      >&#8635; {this.state.location == "/game" ? "Reload" : "リロード" }</button>
     )
   }
 }

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import preloadGoogleFont from '../public/lib/js/preload'
 import Navbar from '../components/Navbar'
 import RevealButton from '../components/RevealButton'
 import Reload from '../components/Reload'
@@ -9,9 +10,10 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Imagine Debater</title>
+        <title>Imagine Debater Game</title>
         <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+        {preloadGoogleFont}
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
@@ -54,9 +56,6 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
         }
         * {
           box-sizing: border-box;

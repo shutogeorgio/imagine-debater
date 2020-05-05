@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Imagine Debater</title>
+        <title>Imagine Debater Game</title>
         <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />

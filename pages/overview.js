@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import preloadGoogleFont from '../public/lib/js/preload'
 import Navbar from '../components/Navbar'
 import Overview from '../components/Overview'
 import Footer from '../components/Footer'
@@ -12,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
+        {preloadGoogleFont}
       </Head>
 
       <Navbar />

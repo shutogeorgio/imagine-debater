@@ -1,51 +1,35 @@
 import Head from 'next/head'
+import preloadGoogleFont from '../public/lib/js/preload'
 import Navbar from '../components/Navbar'
-import RevealButton from '../components/RevealButton'
-import Reload from '../components/Reload'
-import Job from '../components/Job'
 import Footer from '../components/Footer'
 
 export default function Home() {
-  const color = "btn btn-secondary";
   return (
     <div className="container">
       <Head>
         <title>Imagine Debater</title>
         <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+        {preloadGoogleFont}
         <link href="/lib/css/style.css" rel="stylesheet" />
       </Head>
 
       <Navbar />
       
       <main>
-        <h1 className="title"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
-        <Reload />
-        <div className="flex">
-        <div className="grid mr-5">
-          <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
-            <div className="sizser">
-                <div className="d-inline-block">
-                  <h3 className="mr-5 text-info">Player. 1</h3>
-                  <Job />
-                  <RevealButton />
-                </div>
-              </div>
-              
+        <div className="flex index-flex-manager">
+          <div className="d-flex flex-column pl-3 mr-5 align-items-center">
+            <h1 className="h1-title mr-auto"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
+            <div className="mt-3 desc-under mr-auto">Follow your "Wild Imagination".<br /> Exercise to maxmize your creativities.</div>
+            <a href="/overview" className="btn btn-outline-info mt-3 btn-sm mr-auto">See Overview &rarr;</a>
+          </div>
+          <div className="d-flex w-display-manager">
+            <img src="/discuss.png" className="w-100 bd-rd-min" />
           </div>
         </div>
-
-        <div className="grid">
-          <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
-            <div className="sizser">
-              <h3 className="mr-5 text-info">Player. 2</h3>
-              <Job />
-            </div>
-            <RevealButton />
-          </div>
+        <div className="d-flex pl-5">
+          <a href="/game" className="btn btn btn-info mt-5 w-100">Let's Play! &rarr;</a>
         </div>
-        </div>
-        
       </main>
 
       <Footer />
@@ -55,12 +39,29 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
         }
         * {
           box-sizing: border-box;
+        }
+        main {
+          min-height: 500px;
+        }
+        .h1-title {
+          font-size: 40px;
+        }
+        .desc-under {
+          font-size: 20px;
+          line-height: 2;
+        } 
+        .index-flex-manager {
+          place-content: center;
+        }
+        .w-display-manager {
+          width: 50%;
+        }
+        .bd-rd-min {
+          border-radius: 5px;
+          box-shadow: 0 1px 0 rgba(12,13,14,0.15);
         }
       `}</style>
     </div>

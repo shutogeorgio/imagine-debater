@@ -5,18 +5,22 @@
   },
   { 
     "id": 2,
-    "desc": "Get one role and three items for each player"
+    "desc": "First of all, Player.1 Get one role and three items for each player."
   },
   { 
     "id": 3,
-    "desc": "Player gets 10 sec to create strategy to defeat opponent"
+    "desc": "Then, Player.1 gets 10 sec to create strategy to defeat opponent by quoting three items."
   },
   {
     "id": 4,
-    "desc": "In 1 min, appeal how your role is greater than opponent one by integrating items for enhancement"
+    "desc": "In 1 min, appeal how your role is greater than opponent one by integrating items for enhancement."
   },
   { 
     "id": 5,
-    "desc": "Play role vice versa as well and judge by other people"
+    "desc": "Player.2 repeat same things which Player. 1 have done."
+  },
+  { 
+    "id": 6,
+    "desc": "Judge each other or third person can judge which player seems to be better."
   }
 ]

@@ -26,20 +26,20 @@ export default class RevealButton extends Component {
   }
 
   render() {
-    if (this.state.display && this.state.location == "/") {
+    if (this.state.display && this.state.location == "/game") {
       return (
          <div className="mt-3">
            <button className="btn btn-info btn-sm" onClick={this.transDisplay}>&times; Close</button>
            <Item />
          </div>
       );
-    } else if(!this.state.display && this.state.location == "/") {
+    } else if(!this.state.display && this.state.location == "/game") {
       return (
         <div className="mt-3">
           <button className="btn btn-info btn-sm" onClick={this.transDisplay}>Open</button>
          </div>
       );
-    } else if (this.state.display && this.state.location == "/jp") {
+    } else if (this.state.display && this.state.location == "/jp/game") {
       return (
         <div>
          <button className="btn btn-info btn-sm" onClick={this.transDisplay}>&times; Close</button>

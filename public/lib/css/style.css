@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Lora', serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
 }
 
@@ -101,11 +101,25 @@ code {
     line-height: 1.15;
     font-size: 2rem;
   }
+  img.title-logo {
+    width: 30px;
+    height: 30px;
+  } 
   .copy-right-text {
     font-size: .7rem;
   }
   .nav-bar-home {
     padding: 0px;
+  }
+  h1.h1-title {
+    font-size: 28px;
+  }
+  .index-flex-manager {
+    flex-direction: column;
+  }
+  .w-display-manager {
+    width: 100%;
+    margin-top: 15px;
   }
 }
 
@@ -134,7 +148,7 @@ code {
   display: inline-block;
 }
 .card h3 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 .5rem 0;
   font-size: 1.5rem;
 }
 .card p {

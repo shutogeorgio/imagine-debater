@@ -20,7 +20,8 @@ export default function Home() {
       <Navbar />
       
       <main>
-        <h1 className="title"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
+        <h1 className="h1-title"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
+        <h3 className="mt-3 text-info">Let's Maximize productivities and creativity !!</h3>
         <Reload />
         <div className="flex">
         <div className="grid mr-5">

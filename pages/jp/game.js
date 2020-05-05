@@ -5,6 +5,8 @@ import Reload from '../../components/Reload'
 import Footer from '../../components/Footer'
 import RevealButton from '../../components/RevealButton'
 
+import preloadGoogleFont from '../../public/lib/js/preload'
+
 export default function Home() {
   
   return (
@@ -14,12 +16,14 @@ export default function Home() {
         <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
+        {preloadGoogleFont}
       </Head>
 
       <Navbar />
       
       <main>
-        <h1 className="title"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
+        <h1 className="h1-title"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
+        <h3 className="mt-3 text-info">想像力と生産性を最大化しましょう！</h3>
         <Reload />
         <div className="flex">
         <div className="grid mr-5">
@@ -52,9 +56,6 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
         }
 
         * {

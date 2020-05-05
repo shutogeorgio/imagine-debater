@@ -48,7 +48,7 @@ export default class Navbar extends React.Component {
               <span className="text-dark d-flex nab-var-size pr-1 mr-3">Overview</span>
               <a href="/game" className="text-info d-flex mr-auto nab-var-size pr-1">Game</a>
             </div>
-            <a href="/jp" className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+            <a href="/jp/overview" className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
             <span className="text-dark d-flex nab-var-size"> / EN</span>
           </nav>
         );
@@ -100,7 +100,7 @@ export default class Navbar extends React.Component {
               <a href="/jp/game" className="text-info d-flex mr-auto nab-var-size pr-1">ゲーム</a>
             </div>
             <span className="text-dark d-flex ml-auto nab-var-size pr-1">JP /</span>
-            <a href="/" className="text-info d-flex nab-var-size">EN</a>
+            <a href="/overview" className="text-info d-flex nab-var-size">EN</a>
           </nav>
         );
       

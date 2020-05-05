@@ -17,9 +17,8 @@ export default function Home() {
     <Navbar />
 
       <main>
-        <h1 className="title">概要</h1>
+        <h1 className="h1-title">ルール</h1>
         <div className="flex flex-column">
-          <h2 className="mr-5 text-info">ルール</h2>
           <OverviewJP />
         </div>
         <a href="/jp" className="btn btn-info mt-5">ホーム</a>

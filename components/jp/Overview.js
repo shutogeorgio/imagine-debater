@@ -12,7 +12,7 @@ const newdata = data.map((data) => {
 export default class OverviewJP extends Component {
   render() {
     return (
-      <ul className="p-3 owncard">{newdata}</ul>
+      <ul className="owncard">{newdata}</ul>
     )
   }
 }

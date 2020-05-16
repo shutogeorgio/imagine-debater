@@ -23,7 +23,7 @@ class Item extends React.Component {
   render() {
     const threeWords = this.state.words.map(singleWord => {
       return (
-        <li key={singleWord}>{singleWord}</li>
+        <li key={singleWord}><strong>{singleWord}</strong></li>
       )
     });
 

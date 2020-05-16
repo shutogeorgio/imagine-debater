@@ -39,7 +39,7 @@ export default class Navbar extends React.Component {
       case "/overview":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
               Imagine Debater
               </a>
@@ -56,7 +56,7 @@ export default class Navbar extends React.Component {
       case "/game":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
               Imagine Debater
               </a>
@@ -90,7 +90,7 @@ export default class Navbar extends React.Component {
       case "/jp/overview":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/jp">
               <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
               Imagine Debater
               </a>
@@ -107,7 +107,7 @@ export default class Navbar extends React.Component {
       case "/jp/game":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/jp">
               <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
               Imagine Debater
               </a>
@@ -124,7 +124,7 @@ export default class Navbar extends React.Component {
       default:
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
               Imagine Debater
             </a>

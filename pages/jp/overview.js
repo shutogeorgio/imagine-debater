@@ -17,7 +17,7 @@ export default function Home() {
     <Navbar />
 
       <main>
-        <h1 className="h1-title">ルール</h1>
+        <h1 className="h1-title text-info mr-auto">ルール</h1>
         <div className="flex flex-column">
           <OverviewJP />
         </div>

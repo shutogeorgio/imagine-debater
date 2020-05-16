@@ -19,9 +19,8 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <h1 className="title">Overview</h1>
-        <div className="flex flex-column">
-          <h2 className="mr-5 text-info">Rules</h2>
+        <div className="flex flex-column mt-3">
+          <h1 className="mr-auto text-info">Rules</h1>
           <Overview />
         </div>
         <a href="/" className="btn btn-info mt-5">Home</a>

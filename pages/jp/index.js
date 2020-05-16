@@ -27,7 +27,7 @@ export default function Home() {
             <img src="/discuss.png" className="w-100 bd-rd-min" />
           </div>
         </div>
-        <div className="d-flex pl-5">
+        <div className="d-flex">
           <a href="/jp/game" className="btn btn btn-info mt-5 w-100">ゲームをプレイ &rarr;</a>
         </div>
       </main>

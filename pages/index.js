@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import preloadGoogleFont from '../public/lib/js/preload'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -10,8 +11,8 @@ export default function Home() {
         <title>Imagine Debater</title>
         <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
-        {preloadGoogleFont}
         <link href="/lib/css/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
 
       <Navbar />
@@ -21,14 +22,18 @@ export default function Home() {
           <div className="d-flex flex-column pl-3 mr-5 align-items-center">
             <h1 className="h1-title mr-auto"><img src="/imagine-logo.png" className="title-logo" />Imagine Debater</h1>
             <div className="mt-3 desc-under mr-auto">Follow your "Wild Imagination".<br /> Exercise to maxmize your creativities.</div>
-            <a href="/overview" className="btn btn-outline-info mt-3 btn-sm mr-auto">See Overview &rarr;</a>
+            <Link href="/overview">
+              <a className="btn btn-outline-info mt-3 btn-sm mr-auto">See Overview &rarr;</a>
+            </Link>
           </div>
           <div className="d-flex w-display-manager">
             <img src="/discuss.png" className="w-100 bd-rd-min" />
           </div>
         </div>
         <div className="d-flex">
-          <a href="/game" className="btn btn btn-info mt-5 w-100">Let's Play! &rarr;</a>
+          <Link href="/game">
+            <a className="btn btn btn-info mt-5 w-100">Let's Play! &rarr;</a>
+          </Link>
         </div>
       </main>
 

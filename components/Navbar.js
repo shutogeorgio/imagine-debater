@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'next/link'
 
 export default class Navbar extends React.Component {
   
@@ -73,66 +74,96 @@ export default class Navbar extends React.Component {
       case "/jp":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="/jp#">
-              <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
-              Imagine Debater
-            </a>
+            <Link href="/jp#">
+              <a className="navbar-brand">
+                <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
+                Imagine Debater
+              </a>
+            </Link>
             <div className="d-flex">
               <span className="text-dark d-flex nab-var-size mr-3 pl-5">ホーム</span>
-              <a href="/jp/overview" className="text-info d-flex nab-var-size pr-1 mr-3">ルール</a>
-              <a href="/jp/game" className="text-info d-flex mr-auto nab-var-size pr-1">ゲーム</a>
+              <Link href="/jp/overview">
+                <a className="text-info d-flex nab-var-size pr-1 mr-3">ルール</a>
+              </Link>
+              <Link href="/jp/game">
+                <a className="text-info d-flex mr-auto nab-var-size pr-1">ゲーム</a>
+              </Link>
             </div>
             <span className="text-dark d-flex ml-auto nab-var-size pr-1">JP /</span>
-            <a href="/" className="text-info d-flex nab-var-size">EN</a>
+            <Link href="/">
+              <a className="text-info d-flex nab-var-size">EN</a>
+            </Link>
           </nav>
         );
       
       case "/jp/overview":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="/jp">
-              <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
-              Imagine Debater
+            <Link href="/jp">
+              <a className="navbar-brand">
+                <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
+                Imagine Debater
               </a>
+            </Link>
             <div className="d-flex">
-              <a href="/jp" className="text-info d-flex nab-var-size mr-3 pl-5">ホーム</a>
+              <Link href="/jp">
+                <a className="text-info d-flex nab-var-size mr-3 pl-5">ホーム</a>
+              </Link>
               <span className="text-dark d-flex nab-var-size pr-1 mr-3">ルール</span>
-              <a href="/jp/game" className="text-info d-flex mr-auto nab-var-size pr-1">ゲーム</a>
+              <Link href="/jp/game">
+                <a className="text-info d-flex mr-auto nab-var-size pr-1">ゲーム</a>
+              </Link>
             </div>
             <span className="text-dark d-flex ml-auto nab-var-size pr-1">JP /</span>
-            <a href="/overview" className="text-info d-flex nab-var-size">EN</a>
+            <Link href="/overview">
+              <a className="text-info d-flex nab-var-size">EN</a>
+            </Link>
           </nav>
         );
       
       case "/jp/game":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="/jp">
-              <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
-              Imagine Debater
+            <Link href="/jp">
+              <a className="navbar-brand">
+                <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
+                Imagine Debater
               </a>
+            </Link>
             <div className="d-flex">
-              <a href="/jp" className="text-info d-flex nab-var-size mr-3 pl-5">ホーム</a>
-              <a href="/jp/overview" className="text-info d-flex nab-var-size pr-1 mr-3">ルール</a>
+              <Link href="/jp">
+                <a className="text-info d-flex nab-var-size mr-3 pl-5">ホーム</a>
+              </Link>
+              <Link href="/jp/overview">
+                <a className="text-info d-flex nab-var-size pr-1 mr-3">ルール</a>
+              </Link>
               <span className="text-dark d-flex mr-auto nab-var-size pr-1">ゲーム</span>
             </div>
             <span className="text-dark d-flex ml-auto nab-var-size pr-1">JP /</span>
-            <a href="/game" className="text-info d-flex nab-var-size">EN</a>
+            <Link href="/game">
+              <a className="text-info d-flex nab-var-size">EN</a>
+            </Link>
           </nav>
         );
       
       default:
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="/">
-              <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
-              Imagine Debater
-            </a>
+            <Link>
+              <a className="navbar-brand" href="/">
+                <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
+                Imagine Debater
+              </a>
+            </Link>
             <div className="d-flex">
-              <a href="/jp" className="text-info d-flex nab-var-size mr-3 pl-5">ホーム</a>
-              <span href="/overview" className="text-dark d-flex mr-auto nab-var-size pr-1">ルール</span>
+              <Link href="/jp">
+                <a className="text-info d-flex nab-var-size mr-3 pl-5">Home</a>
+              </Link>
+              <span href="/overview" className="text-dark d-flex mr-auto nab-var-size pr-1">Overview</span>
             </div>
-            <a href="/jp" className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+            <Link href="/jp">
+              <a className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+            </Link>
             <span className="text-dark d-flex nab-var-size"> / EN</span>
           </nav>
         );

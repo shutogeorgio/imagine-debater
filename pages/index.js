@@ -11,8 +11,8 @@ export default function Home() {
         <title>Imagine Debater</title>
         <link rel="icon" href="/imagine-logo.png" />
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
-        {preloadGoogleFont}
         <link href="/lib/css/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
 
       <Navbar />

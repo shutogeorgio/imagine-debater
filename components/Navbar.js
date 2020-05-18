@@ -23,14 +23,20 @@ export default class Navbar extends React.Component {
       case "/":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="#">
-              <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
-              Imagine Debater
+            <Link href="/#">
+              <a className="navbar-brand">
+                <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
+                Imagine Debater
               </a>
+            </Link>
             <div className="d-flex">
               <span className="text-text d-flex nab-var-size mr-3 pl-5">Home</span>
-              <a href="/overview" className="text-info d-flex nab-var-size pr-1 mr-3">Overview</a>
-              <a href="/game" className="text-info d-flex mr-auto nab-var-size pr-1">Game</a>
+              <Link href="/overview">
+                <a className="text-info d-flex nab-var-size pr-1 mr-3">Overview</a>
+              </Link>
+              <Link href="/game">
+                <a className="text-info d-flex mr-auto nab-var-size pr-1">Game</a>
+              </Link>
             </div>
             <a href="/jp" className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
             <span className="text-dark d-flex nab-var-size"> / EN</span>
@@ -40,16 +46,24 @@ export default class Navbar extends React.Component {
       case "/overview":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="/">
-              <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
-              Imagine Debater
+            <Link href="/">
+              <a className="navbar-brand">
+                <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
+                Imagine Debater
               </a>
+            </Link>  
             <div className="d-flex">
-              <a href="/" className="text-info d-flex nab-var-size mr-3 pl-5">Home</a>
+              <Link href="/">
+                <a className="text-info d-flex nab-var-size mr-3 pl-5">Home</a>
+              </Link>
               <span className="text-dark d-flex nab-var-size pr-1 mr-3">Overview</span>
-              <a href="/game" className="text-info d-flex mr-auto nab-var-size pr-1">Game</a>
+              <Link href="/game">
+                <a className="text-info d-flex mr-auto nab-var-size pr-1">Game</a>
+              </Link>
             </div>
-            <a href="/jp/overview" className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+            <Link href="/jp/overview">
+              <a className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+            </Link>
             <span className="text-dark d-flex nab-var-size"> / EN</span>
           </nav>
         );
@@ -57,16 +71,24 @@ export default class Navbar extends React.Component {
       case "/game":
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <a className="navbar-brand" href="/">
-              <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
-              Imagine Debater
+            <Link href="/">
+              <a className="navbar-brand">
+                <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
+                Imagine Debater
               </a>
+            </Link>
             <div className="d-flex">
-              <a href="/" className="text-info d-flex nab-var-size mr-3 pl-5">Home</a>
-              <a href="/overview" className="text-info d-flex nab-var-size pr-1 mr-3">Overview</a>
+              <Link href="/">
+                <a className="text-info d-flex nab-var-size mr-3 pl-5">Home</a>
+              </Link>
+              <Link href="overview">
+                <a className="text-info d-flex nab-var-size pr-1 mr-3">Overview</a>
+              </Link>
               <span className="text-dark d-flex mr-auto nab-var-size pr-1">Game</span>
             </div>
-            <a href="/jp/game" className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+            <Link href="/jp/game">
+              <a className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+            </Link>
             <span className="text-dark d-flex nab-var-size"> / EN</span>
           </nav>
         );
@@ -149,8 +171,8 @@ export default class Navbar extends React.Component {
       default:
         return (
           <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
-            <Link>
-              <a className="navbar-brand" href="/">
+            <Link href="/">
+              <a className="navbar-brand">
                 <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
                 Imagine Debater
               </a>

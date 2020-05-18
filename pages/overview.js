@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import preloadGoogleFont from '../public/lib/js/preload'
 import Navbar from '../components/Navbar'
 import Overview from '../components/Overview'
@@ -17,15 +18,15 @@ export default function Home() {
       </Head>
 
       <Navbar />
-
       <main>
         <div className="flex flex-column mt-3">
           <h1 className="mr-auto text-info">Rules</h1>
           <Overview />
         </div>
-        <a href="/" className="btn btn-info mt-5">Home</a>
+        <Link href="/game">
+          <a className="btn btn-info mt-5">Let's Play! &rarr;</a>
+        </Link>
       </main>
-
       <Footer />
     </div>
   )

@@ -165,8 +165,8 @@ a:hover {
   color: inherit;
 }
 main {
-  background: url('/nbd-imagine.png');
   background-size: cover;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 .nav-bar-detail {
   border-top: 4px solid #17a2b8;

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 
-export default function Home() {
+const Index: React.FunctionComponent = () => {
   return (
     <div className="container">
       <Head>
@@ -71,3 +71,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Index

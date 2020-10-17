@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import preloadGoogleFont from '../public/lib/js/preload'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-export default function Home() {
+const Home: React.FunctionComponent = () => {
   return (
     <div className="container">
       <Head>
@@ -72,3 +71,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home

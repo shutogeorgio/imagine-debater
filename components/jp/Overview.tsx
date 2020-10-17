@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import data from '../data/overview/jp.json'
 
 const newdata = data.map((data) => { 
@@ -9,10 +8,10 @@ const newdata = data.map((data) => {
   )
 })
 
-export default class OverviewJP extends Component {
-  render() {
-    return (
-      <ul className="owncard">{newdata}</ul>
-    )
-  }
+const OverviewJP: React.FunctionComponent = () => {
+  return (
+    <ul className="owncard">{newdata}</ul>
+  )
 }
+
+export default OverviewJP

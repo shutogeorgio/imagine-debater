@@ -1,2 +1,6 @@
-const withSass = require('@zeit/next-sass')
-module.exports = withSass();
+const withTypescript = require('@zeit/next-typescript')
+module.exports = withTypescript({
+  webpack(config, options) {
+    return config
+  }
+})

@@ -5,7 +5,7 @@ import Reload from '../components/Reload'
 import Job from '../components/Job'
 import Footer from '../components/Footer'
 
-export default function Home() {
+const Game: React.FunctionComponent = () => {
   return (
     <div className="container">
       <Head>
@@ -24,7 +24,7 @@ export default function Home() {
         <Reload />
         <div className="flex">
         <div className="grid mr-5">
-          <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
+          <div className="card shadow-lg bg-light">
             <div className="sizser">
                 <div className="d-inline-block">
                   <h3 className="mr-5 text-info">Player. 1</h3>
@@ -32,12 +32,11 @@ export default function Home() {
                   <RevealButton />
                 </div>
               </div>
-              
           </div>
         </div>
 
         <div className="grid">
-          <div href="https://nextjs.org/docs" className="card shadow-lg bg-light">
+          <div className="card shadow-lg bg-light">
             <div className="sizser">
               <h3 className="mr-5 text-info">Player. 2</h3>
               <Job />
@@ -64,3 +63,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Game

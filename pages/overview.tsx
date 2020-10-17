@@ -1,11 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Navbar from '../../components/Navbar'
-import OverviewJP from '../../components/jp/Overview'
-import Footer from '../../components/Footer'
+import Navbar from '../components/Navbar'
+import OverviewEle from '../components/OverviewEle'
+import Footer from '../components/Footer'
 
-export default function Home() {
-
+const Overview: React.FunctionComponent = () =>  {
   return (
     <div className="container">
       <Head>
@@ -15,17 +14,20 @@ export default function Home() {
         <link href="/lib/css/style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
-    <Navbar />
+
+      <Navbar />
       <main>
-        <h1 className="h1-title text-info mr-auto">ルール</h1>
-        <div className="flex flex-column">
-          <OverviewJP />
+        <div className="flex flex-column mt-3">
+          <h1 className="mr-auto text-info">Rules</h1>
+          <OverviewEle />
         </div>
-        <Link href="/jp/game">
-          <a className="btn btn-info mt-5">ゲームをプレイ　&rarr;</a> 
+        <Link href="/game">
+          <a className="btn btn-info mt-5">Let's Play! &rarr;</a>
         </Link>
       </main>
       <Footer />
     </div>
   )
 }
+
+export default Overview

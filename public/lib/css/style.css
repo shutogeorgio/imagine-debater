@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 html,
 body {
   padding: 0;
@@ -18,15 +21,6 @@ li:before {
   content: "◆";
   color: #17a2b8;
 }
-
-.container {
-  padding: 0 0.5rem;
-  display: flex;
-  width: 95%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 main {
   padding: 2rem 6%;
   display: flex;
@@ -34,10 +28,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.flex {
-  display: flex;
-  width: 100%;
 }
 footer {
   width: 100%;
@@ -164,10 +154,6 @@ code {
 a:hover {
   color: inherit;
 }
-main {
-  background: url('/nbd-imagine.png');
-  background-size: cover;
-}
 .nav-bar-detail {
   border-top: 4px solid #17a2b8;
   box-shadow: 0 1px 0 rgba(12,13,14,0.15);
@@ -207,3 +193,5 @@ main {
     margin-top: 15px;
   }
 }
+
+@tailwind utilities;

@@ -3,13 +3,12 @@ import Link from 'next/link'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 
-export default function Home() {
+const Index: React.FunctionComponent = () => {
   return (
-    <div className="container">
+    <div className="container w-full flex flex-col items-center mx-auto">
       <Head>
         <title>Imagine Debater</title>
         <link rel="icon" href="/imagine-logo.png" />
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
@@ -71,3 +70,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Index

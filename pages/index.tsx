@@ -1,16 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import preloadGoogleFont from '../public/lib/js/preload'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-export default function Home() {
+const Home: React.FunctionComponent = () => {
   return (
-    <div className="container">
+    <div className="container w-full flex flex-col items-center mx-auto">
       <Head>
         <title>Imagine Debater</title>
         <link rel="icon" href="/imagine-logo.png" />
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
@@ -38,37 +36,8 @@ export default function Home() {
       </main>
 
       <Footer />
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-        }
-        * {
-          box-sizing: border-box;
-        }
-        main {
-          min-height: 500px;
-        }
-        .h1-title {
-          font-size: 40px;
-        }
-        .desc-under {
-          font-size: 20px;
-          line-height: 2;
-        } 
-        .index-flex-manager {
-          place-content: center;
-        }
-        .w-display-manager {
-          width: 50%;
-        }
-        .bd-rd-min {
-          border-radius: 5px;
-          box-shadow: 0 1px 0 rgba(12,13,14,0.15);
-        }
-      `}</style>
     </div>
   )
 }
+
+export default Home

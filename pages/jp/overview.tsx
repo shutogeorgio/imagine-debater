@@ -2,16 +2,15 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Navbar from '../../components/Navbar'
 import OverviewJP from '../../components/jp/Overview'
-import Footer from '../../components/Footer'
+import Footer from '../../components/Footer.tsx'
 
-export default function Home() {
+const Overview: React.FunctionComponent = () => {
 
   return (
-    <div className="container">
+    <div className="container w-full flex flex-col items-center mx-auto">
       <Head>
         <title>Overview</title>
         <link rel="icon" href="/imagine-logo.png" />
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
@@ -29,3 +28,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Overview

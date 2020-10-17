@@ -1,47 +1,35 @@
-import React, { Component } from 'react';
 import Link from 'next/link'
+import { withRouter } from 'next/router'
+import React from 'react';
 
 export default class Navbar extends React.Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = {
-      location: ''
-    }
-  }
-
-  componentDidMount() {
-    const currentLocation = window.location.pathname;
-    this.setState({
-      location: currentLocation
-    })
-
-  }
-
   render() {
-    switch (this.state.location) {
+    const path: string = "/"
+    switch (path) {
       case "/":
         return (
-          <nav className="navbar navbar-light bg-white w-100 nav-bar-detail">
+          <nav className="bg-gray-100 w-full flex items-center px-10 py-3 border-t-4 border-teal-600 border-t:after border-gray-500:after">
             <Link href="/#">
-              <a className="navbar-brand">
+              <a className="navbar-brand flex items-center">
                 <img src="/imagine-logo.png" width="30" height="30" className="d-inline-block align-top mr-3" alt="logo" />
                 Imagine Debater
               </a>
             </Link>
-            <div className="d-flex">
-              <span className="text-text d-flex nab-var-size mr-3 pl-5">Home</span>
+            <div className="flex mr-auto items-center">
+              <span className="text-text text-sm mr-3 pl-5">Home</span>
               <Link href="/overview">
-                <a className="text-info d-flex nab-var-size pr-1 mr-3">Overview</a>
+                <a className="text-teal-600 text-sm pr-1 mr-3">Overview</a>
               </Link>
               <Link href="/game">
-                <a className="text-info d-flex mr-auto nab-var-size pr-1">Game</a>
+                <a className="text-teal-600 mr-auto text-sm pr-1">Game</a>
               </Link>
             </div>
-            <Link href="/jp">
-              <a className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
-            </Link>
-            <span className="text-dark d-flex nab-var-size"> / EN</span>
+            <div className="flex ml-auto">
+              <Link href="/jp">
+                <a className="text-teal-600 text-sm pr-1">JP</a>
+              </Link>
+              <span className="text-dark text-sm"> / EN</span>
+            </div>
           </nav>
         );
       
@@ -54,19 +42,19 @@ export default class Navbar extends React.Component {
                 Imagine Debater
               </a>
             </Link>  
-            <div className="d-flex">
+            <div className="flex">
               <Link href="/">
-                <a className="text-info d-flex nab-var-size mr-3 pl-5">Home</a>
+                <a className="text-teal-600 flex text-sm mr-3 pl-5">Home</a>
               </Link>
-              <span className="text-dark d-flex nab-var-size pr-1 mr-3">Overview</span>
+              <span className="text-dark flex text-sm pr-1 mr-3">Overview</span>
               <Link href="/game">
-                <a className="text-info d-flex mr-auto nab-var-size pr-1">Game</a>
+                <a className="text-teal-600 flex mr-auto text-sm pr-1">Game</a>
               </Link>
             </div>
             <Link href="/jp/overview">
-              <a className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+              <a className="text-teal-600 flex ml-auto text-sm pr-1">JP</a>
             </Link>
-            <span className="text-dark d-flex nab-var-size"> / EN</span>
+            <span className="text-dark flex text-sm"> / EN</span>
           </nav>
         );
       
@@ -79,19 +67,19 @@ export default class Navbar extends React.Component {
                 Imagine Debater
               </a>
             </Link>
-            <div className="d-flex">
+            <div className="flex">
               <Link href="/">
-                <a className="text-info d-flex nab-var-size mr-3 pl-5">Home</a>
+                <a className="text-teal-600 flex text-sm mr-3 pl-5">Home</a>
               </Link>
               <Link href="overview">
-                <a className="text-info d-flex nab-var-size pr-1 mr-3">Overview</a>
+                <a className="text-teal-600 flex text-sm pr-1 mr-3">Overview</a>
               </Link>
-              <span className="text-dark d-flex mr-auto nab-var-size pr-1">Game</span>
+              <span className="text-dark flex mr-auto text-sm pr-1">Game</span>
             </div>
             <Link href="/jp/game">
-              <a className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+              <a className="text-teal-600 flex ml-auto text-sm pr-1">JP</a>
             </Link>
-            <span className="text-dark d-flex nab-var-size"> / EN</span>
+            <span className="text-dark flex text-sm"> / EN</span>
           </nav>
         );
       
@@ -104,18 +92,18 @@ export default class Navbar extends React.Component {
                 Imagine Debater
               </a>
             </Link>
-            <div className="d-flex">
-              <span className="text-dark d-flex nab-var-size mr-3 pl-5">ホーム</span>
+            <div className="flex">
+              <span className="text-dark flex text-sm mr-3 pl-5">ホーム</span>
               <Link href="/jp/overview">
-                <a className="text-info d-flex nab-var-size pr-1 mr-3">ルール</a>
+                <a className="text-teal-600 flex text-sm pr-1 mr-3">ルール</a>
               </Link>
               <Link href="/jp/game">
-                <a className="text-info d-flex mr-auto nab-var-size pr-1">ゲーム</a>
+                <a className="text-teal-600 flex mr-auto text-sm pr-1">ゲーム</a>
               </Link>
             </div>
-            <span className="text-dark d-flex ml-auto nab-var-size pr-1">JP /</span>
+            <span className="text-dark flex ml-auto text-sm pr-1">JP /</span>
             <Link href="/">
-              <a className="text-info d-flex nab-var-size">EN</a>
+              <a className="text-teal-600 flex text-sm">EN</a>
             </Link>
           </nav>
         );
@@ -129,18 +117,18 @@ export default class Navbar extends React.Component {
                 Imagine Debater
               </a>
             </Link>
-            <div className="d-flex">
+            <div className="flex">
               <Link href="/jp">
-                <a className="text-info d-flex nab-var-size mr-3 pl-5">ホーム</a>
+                <a className="text-teal-600 flex text-sm mr-3 pl-5">ホーム</a>
               </Link>
-              <span className="text-dark d-flex nab-var-size pr-1 mr-3">ルール</span>
+              <span className="text-dark flex text-sm pr-1 mr-3">ルール</span>
               <Link href="/jp/game">
-                <a className="text-info d-flex mr-auto nab-var-size pr-1">ゲーム</a>
+                <a className="text-teal-600 flex mr-auto text-sm pr-1">ゲーム</a>
               </Link>
             </div>
-            <span className="text-dark d-flex ml-auto nab-var-size pr-1">JP /</span>
+            <span className="text-dark flex ml-auto text-sm pr-1">JP /</span>
             <Link href="/overview">
-              <a className="text-info d-flex nab-var-size">EN</a>
+              <a className="text-teal-600 flex text-sm">EN</a>
             </Link>
           </nav>
         );
@@ -154,18 +142,18 @@ export default class Navbar extends React.Component {
                 Imagine Debater
               </a>
             </Link>
-            <div className="d-flex">
+            <div className="flex">
               <Link href="/jp">
-                <a className="text-info d-flex nab-var-size mr-3 pl-5">ホーム</a>
+                <a className="text-teal-600 flex text-sm mr-3 pl-5">ホーム</a>
               </Link>
               <Link href="/jp/overview">
-                <a className="text-info d-flex nab-var-size pr-1 mr-3">ルール</a>
+                <a className="text-teal-600 flex text-sm pr-1 mr-3">ルール</a>
               </Link>
-              <span className="text-dark d-flex mr-auto nab-var-size pr-1">ゲーム</span>
+              <span className="text-dark flex mr-auto text-sm pr-1">ゲーム</span>
             </div>
-            <span className="text-dark d-flex ml-auto nab-var-size pr-1">JP /</span>
+            <span className="text-dark flex ml-auto text-sm pr-1">JP /</span>
             <Link href="/game">
-              <a className="text-info d-flex nab-var-size">EN</a>
+              <a className="text-teal-600 flex text-sm">EN</a>
             </Link>
           </nav>
         );
@@ -179,18 +167,18 @@ export default class Navbar extends React.Component {
                 Imagine Debater
               </a>
             </Link>
-            <div className="d-flex">
+            <div className="flex">
               <Link href="/jp">
-                <a className="text-info d-flex nab-var-size mr-3 pl-5">Home</a>
+                <a className="text-teal-600 flex text-sm mr-3 pl-5">Home</a>
               </Link>
-              <span href="/overview" className="text-dark d-flex mr-auto nab-var-size pr-1">Overview</span>
+              <span href="/overview" className="text-dark flex mr-auto text-sm pr-1">Overview</span>
             </div>
             <Link href="/jp">
-              <a className="text-info d-flex ml-auto nab-var-size pr-1">JP</a>
+              <a className="text-teal-600 flex ml-auto text-sm pr-1">JP</a>
             </Link>
-            <span className="text-dark d-flex nab-var-size"> / EN</span>
+            <span className="text-dark flex text-sm"> / EN</span>
           </nav>
         );
     }
-  }  
+  }
 }

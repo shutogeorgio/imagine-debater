@@ -6,11 +6,10 @@ import Footer from '../components/Footer'
 
 const Overview: React.FunctionComponent = () =>  {
   return (
-    <div className="container">
+    <div className="container w-full flex flex-col items-center mx-auto">
       <Head>
         <title>Overview</title>
         <link rel="icon" href="/imagine-logo.png" />
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/lib/css/style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
